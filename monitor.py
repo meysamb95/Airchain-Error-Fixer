@@ -4,7 +4,7 @@ import time
 journalctl_cmd = "sudo journalctl -u stationd -f --no-hostname -o cat"
 
 error_keywords = ["Switchyard client connection error", "Failed to Init VRF", "error in json rpc client, with http response metadata", "VRF record is nil", "Failed to get transaction by hash: not found", "Failed to", "https://junction-testnet-rpc.synergynodes.com/", "'32' msg", "'19' ms"]
-command_to_run = "sudo systemctl stop stationd", "cd tracks", "git pull", "go run cmd/main.go rollback", "go run cmd/main.go rollback", "sudo systemctl restart stationd"
+command_to_run = "sudo systemctl stop stationd"
 
 def run_command(command):
     subprocess.run(command, shell=True)
